@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Me - Data Scientist Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for better look in dark mode */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #101922; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; 
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col transition-colors duration-200">
+<!-- Navbar -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-surface-light/95 dark:bg-background-dark/95 backdrop-blur">
+<div class="px-4 md:px-10 py-3 flex items-center justify-between max-w-[1200px] mx-auto w-full">
+<div class="flex items-center gap-4 text-slate-900 dark:text-white">
+<div class="size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">DataScientist</h2>
+</div>
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Home</a>
+<a class="text-primary text-sm font-bold" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Projects</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Blog</a>
+</nav>
+<div class="hidden md:block">
+<button class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors gap-2">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="truncate">Resume</span>
+</button>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 w-full max-w-[960px] mx-auto px-4 py-8 md:px-6">
+<!-- Profile Header -->
+<section class="flex flex-col md:flex-row gap-8 items-center md:items-start p-6 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm mb-8">
+<div class="relative shrink-0">
+<div class="size-32 md:size-40 rounded-full bg-slate-200 dark:bg-slate-700 bg-center bg-cover border-4 border-surface-light dark:border-[#2d3b4e] shadow-lg" data-alt="Portrait of a smiling data scientist wearing glasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD31ktzk_ym_0xwdixXMUoGK1isj6xdFHwghf_PnjcUVq-0m7SkrS1RhyZe6SPNrYsi77fRqPeh5-i4sQ7oFeIP3oRbcFag775zjNXfxJFs2t4JaSW23kFjsJmsPUQoPWI5DNbginw-pVXcFJ6MBGurzqgRlIsZOaIkYv-xve_Rr2ak3d1gSRmP2PKM0g7hdJabA0CbmnaXI2cFMr1Aiw5whVqi3016DIyxzYlQmM1TDz7Mcos0WqtjG2SaSHN7q8U_-0n4qNhFnjzP");'></div>
+<div class="absolute bottom-1 right-1 bg-green-500 size-4 rounded-full border-2 border-surface-light dark:border-surface-dark" title="Available for work"></div>
+</div>
+<div class="flex flex-col flex-1 gap-3 text-center md:text-left">
+<div>
+<h1 class="text-3xl font-bold text-slate-900 dark:text-white tracking-tight">Hello, I'm Alex.</h1>
+<p class="text-primary font-medium text-lg">Senior Data Scientist</p>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-base leading-relaxed max-w-2xl">
+                    I turn complex data into actionable insights. With a background in statistical mathematics and over 5 years of industry experience, I specialize in building scalable Machine Learning models and translating data patterns into business strategies.
+                </p>
+<div class="flex gap-3 justify-center md:justify-start mt-2">
+<button class="h-10 px-6 rounded-lg bg-primary text-white font-bold text-sm hover:bg-blue-600 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+                        Contact Me
+                    </button>
+<button class="size-10 rounded-lg flex items-center justify-center border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-[20px]">link</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Stats Grid -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+<div class="flex flex-col gap-1 p-5 rounded-lg bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary mb-2">hourglass_top</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Experience</p>
+<p class="text-slate-900 dark:text-white text-2xl font-bold">5+ Years</p>
+</div>
+<div class="flex flex-col gap-1 p-5 rounded-lg bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary mb-2">dataset</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Projects</p>
+<p class="text-slate-900 dark:text-white text-2xl font-bold">20+</p>
+</div>
+<div class="flex flex-col gap-1 p-5 rounded-lg bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary mb-2">article</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Articles</p>
+<p class="text-slate-900 dark:text-white text-2xl font-bold">12</p>
+</div>
+<div class="flex flex-col gap-1 p-5 rounded-lg bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<span class="material-symbols-outlined text-primary mb-2">school</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Master's</p>
+<p class="text-slate-900 dark:text-white text-2xl font-bold">Degree</p>
+</div>
+</section>
+<!-- Two Column Layout for Bio and Skills -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<!-- Main Column: Narrative -->
+<div class="md:col-span-2 flex flex-col gap-8">
+<div>
+<h2 class="text-xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">person</span>
+                        About My Journey
+                    </h2>
+<div class="prose dark:prose-invert text-slate-600 dark:text-slate-400 leading-relaxed space-y-4">
+<p>
+                            My journey into data science began during my Master's in Applied Statistics, where I fell in love with the predictive power of mathematics. I realized that equations on a chalkboard could translate into real-world solutions that save money, time, and even lives.
+                        </p>
+<p>
+                            Starting as a Junior Analyst, I quickly learned that clean data is just as important as the model itself. I spent years honing my skills in SQL and Python, ensuring that the foundation of every project was solid. Over time, I transitioned into more complex Machine Learning roles, leading projects that deployed real-time recommendation engines and fraud detection systems.
+                        </p>
+<p>
+                            Today, I mentor junior data scientists and contribute to open-source libraries. I believe in "Explainable AI" — building models that not only perform well but are also transparent and understandable to stakeholders.
+                        </p>
+</div>
+</div>
+<!-- Skills (Mobile view only moved here if needed, but keeping separate is better structure) -->
+</div>
+<!-- Sidebar: Skills -->
+<div class="md:col-span-1 flex flex-col gap-6">
+<!-- Skill Group -->
+<div class="p-5 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<h3 class="text-sm uppercase tracking-wider font-bold text-slate-500 dark:text-slate-400 mb-4">Core Tech</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-semibold border border-blue-100 dark:border-blue-800/50">Python</span>
+<span class="px-3 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-semibold border border-blue-100 dark:border-blue-800/50">SQL</span>
+<span class="px-3 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-semibold border border-blue-100 dark:border-blue-800/50">R</span>
+<span class="px-3 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-semibold border border-blue-100 dark:border-blue-800/50">Bash</span>
+</div>
+</div>
+<!-- Skill Group -->
+<div class="p-5 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<h3 class="text-sm uppercase tracking-wider font-bold text-slate-500 dark:text-slate-400 mb-4">Frameworks &amp; Tools</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold">PyTorch</span>
+<span class="px-3 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold">TensorFlow</span>
+<span class="px-3 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold">Scikit-learn</span>
+<span class="px-3 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold">Docker</span>
+<span class="px-3 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold">AWS</span>
+<span class="px-3 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold">Tableau</span>
+</div>
+</div>
+<!-- Skill Group -->
+<div class="p-5 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<h3 class="text-sm uppercase tracking-wider font-bold text-slate-500 dark:text-slate-400 mb-4">Soft Skills</h3>
+<ul class="space-y-2">
+<li class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                            Project Management
+                        </li>
+<li class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                            Technical Writing
+                        </li>
+<li class="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+                            Public Speaking
+                        </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Experience Timeline -->
+<section class="mb-12">
+<h2 class="text-xl font-bold text-slate-900 dark:text-white mb-6 px-4">Professional Experience</h2>
+<div class="relative pl-4 md:pl-8 border-l border-slate-200 dark:border-slate-800 ml-4 md:ml-6 space-y-8">
+<!-- Item 1 -->
+<div class="relative">
+<div class="absolute -left-[25px] md:-left-[41px] top-1 h-8 w-8 rounded-full bg-primary flex items-center justify-center text-white ring-4 ring-background-light dark:ring-background-dark">
+<span class="material-symbols-outlined text-[18px]">work</span>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-5 rounded-xl border border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1 mb-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Senior Data Scientist</h3>
+<span class="text-sm font-medium text-primary bg-primary/10 px-2 py-1 rounded">2021 - Present</span>
+</div>
+<p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-3">TechCorp • San Francisco, CA</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-3">
+                            Leading a team of 4 analysts to optimize pricing strategies using reinforcement learning.
+                        </p>
+<ul class="list-disc list-outside ml-4 space-y-1 text-sm text-slate-600 dark:text-slate-400">
+<li>Improved model accuracy by 15% through feature engineering.</li>
+<li>Deployed models to production serving 1M+ requests daily.</li>
+<li>Mentored junior staff on best coding practices.</li>
+</ul>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="relative">
+<div class="absolute -left-[25px] md:-left-[41px] top-1 h-8 w-8 rounded-full bg-surface-light dark:bg-surface-dark border border-slate-300 dark:border-slate-600 flex items-center justify-center text-slate-500 dark:text-slate-400 ring-4 ring-background-light dark:ring-background-dark">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-5 rounded-xl border border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1 mb-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Data Analyst</h3>
+<span class="text-sm font-medium text-slate-500 dark:text-slate-400">2018 - 2021</span>
+</div>
+<p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-3">DataInc • New York, NY</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Conducted exploratory data analysis for e-commerce clients. Created interactive Tableau dashboards for stakeholder reporting.
+                        </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="relative">
+<div class="absolute -left-[25px] md:-left-[41px] top-1 h-8 w-8 rounded-full bg-surface-light dark:bg-surface-dark border border-slate-300 dark:border-slate-600 flex items-center justify-center text-slate-500 dark:text-slate-400 ring-4 ring-background-light dark:ring-background-dark">
+<span class="material-symbols-outlined text-[18px]">table_view</span>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-5 rounded-xl border border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row md:justify-between md:items-center gap-1 mb-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Junior Analyst</h3>
+<span class="text-sm font-medium text-slate-500 dark:text-slate-400">2016 - 2018</span>
+</div>
+<p class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-3">StartUp • Remote</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Assisted in data cleaning and migration of legacy databases. Automated weekly reporting using Python scripts.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Section -->
+<section>
+<h2 class="text-xl font-bold text-slate-900 dark:text-white mb-6 px-4">Education &amp; Certifications</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+<!-- Edu Card 1 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<div class="mt-1">
+<div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">school</span>
+</div>
+</div>
+<div>
+<h3 class="text-base font-bold text-slate-900 dark:text-white">M.S. Applied Statistics</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">University of Data Science</p>
+<p class="text-xs text-slate-400 mt-1">2014 - 2016</p>
+</div>
+</div>
+<!-- Edu Card 2 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<div class="mt-1">
+<div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">school</span>
+</div>
+</div>
+<div>
+<h3 class="text-base font-bold text-slate-900 dark:text-white">B.S. Mathematics</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">State University</p>
+<p class="text-xs text-slate-400 mt-1">2010 - 2014</p>
+</div>
+</div>
+<!-- Cert Card 1 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<div class="mt-1">
+<div class="size-10 rounded-lg bg-orange-500/10 flex items-center justify-center text-orange-500">
+<span class="material-symbols-outlined">verified</span>
+</div>
+</div>
+<div>
+<h3 class="text-base font-bold text-slate-900 dark:text-white">AWS Certified ML Specialty</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Amazon Web Services</p>
+<p class="text-xs text-slate-400 mt-1">Issued 2022</p>
+</div>
+</div>
+<!-- Cert Card 2 -->
+<div class="flex gap-4 p-4 rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800">
+<div class="mt-1">
+<div class="size-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-500">
+<span class="material-symbols-outlined">verified</span>
+</div>
+</div>
+<div>
+<h3 class="text-base font-bold text-slate-900 dark:text-white">TensorFlow Developer</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Google</p>
+<p class="text-xs text-slate-400 mt-1">Issued 2020</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Simple Footer -->
+<footer class="py-8 border-t border-slate-200 dark:border-slate-800 bg-surface-light dark:bg-background-dark mt-10">
+<div class="max-w-[960px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 dark:text-slate-400 text-sm">© 2023 Alex Data Scientist. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">code</span>
+</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

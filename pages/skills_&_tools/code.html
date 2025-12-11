@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skills &amp; Tools - Data Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#111418",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Navbar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-[#283039] bg-background-light/95 dark:bg-[#111418]/95 backdrop-blur-sm px-4 md:px-10 py-3">
+<div class="flex items-center gap-4 text-slate-900 dark:text-white">
+<div class="size-8 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">data_exploration</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Data Portfolio</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-200 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-200 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-200 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Projects</a>
+<a class="text-primary font-bold text-sm leading-normal" href="#">Skills</a>
+<a class="text-slate-600 dark:text-slate-200 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Contact</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-600 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Download Resume</span>
+</button>
+</div>
+<div class="md:hidden text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col items-center py-5 px-4 md:px-10 lg:px-40">
+<div class="layout-content-container flex flex-col max-w-[1200px] w-full flex-1 gap-12">
+<!-- Hero Section -->
+<div class="@container w-full">
+<div class="@[480px]:p-4">
+<div class="relative flex min-h-[320px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-8 overflow-hidden" data-alt="Abstract digital network visualization with blue nodes and connections" style='background-image: linear-gradient(rgba(17, 20, 24, 0.8) 0%, rgba(17, 20, 24, 0.95) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLvR2uu8IQXxsMh83t9TkFsQ_AGBaq2c0bH0_PV__ZhsmRh6-yYjhkvRS2gPOIIO8tVT0KbPJlrwdMATquTk9dwHKNAjpX-9P1HYPbHQ8upgQ8ycMZnhiC-PXil6TFQSHTPm_I0k2Yd5RxDtAvPSMpldzjU3KrGOgJT9VFdjzilJl2IT2xHZNxr5Jm2Xoxdb5nejePQbhkh0TTuKg0fNtL7NGVrhBHorfthm2HNTZ5yNyJsqde2hwyVAmPZ8cNSOgrYgSvLfF2MBfb");'>
+<div class="flex flex-col gap-3 text-center z-10 max-w-2xl">
+<h1 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
+                                    Technical Proficiency &amp; Tooling
+                                </h1>
+<p class="text-slate-300 text-base md:text-lg font-normal leading-relaxed">
+                                    A comprehensive breakdown of my data science stack, from core algorithms and statistical modeling to cloud deployment and visualization.
+                                </p>
+</div>
+<!-- Subtle grid background effect -->
+<div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,black_40%,transparent_100%)] z-0 pointer-events-none"></div>
+</div>
+</div>
+</div>
+<!-- Grid Layout for Skills -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 px-4">
+<!-- LEFT COLUMN: Core Languages & Stats (Primary Skills) -->
+<div class="lg:col-span-7 flex flex-col gap-8">
+<!-- Core Languages Section -->
+<section class="bg-white dark:bg-[#1c232b] rounded-xl p-6 shadow-sm border border-slate-200 dark:border-[#283039]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">code</span>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold">Core Languages</h2>
+</div>
+<div class="flex flex-col gap-6">
+<!-- Python -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-end">
+<p class="text-slate-900 dark:text-white text-base font-medium">Python</p>
+<span class="text-primary text-sm font-bold">95%</span>
+</div>
+<div class="w-full bg-slate-200 dark:bg-[#3b4754] rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full" style="width: 95%"></div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Pandas, NumPy, Scikit-learn, PyTorch</p>
+</div>
+<!-- SQL -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-end">
+<p class="text-slate-900 dark:text-white text-base font-medium">SQL (PostgreSQL/BigQuery)</p>
+<span class="text-primary text-sm font-bold">85%</span>
+</div>
+<div class="w-full bg-slate-200 dark:bg-[#3b4754] rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full" style="width: 85%"></div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Complex joins, Window functions, CTEs</p>
+</div>
+<!-- R -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-end">
+<p class="text-slate-900 dark:text-white text-base font-medium">R</p>
+<span class="text-primary text-sm font-bold">70%</span>
+</div>
+<div class="w-full bg-slate-200 dark:bg-[#3b4754] rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full" style="width: 70%"></div>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Statistical modeling, ggplot2, Shiny</p>
+</div>
+</div>
+</section>
+<!-- Machine Learning Stack -->
+<section class="bg-white dark:bg-[#1c232b] rounded-xl p-6 shadow-sm border border-slate-200 dark:border-[#283039]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">neurology</span>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold">Machine Learning &amp; AI</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Card 1 -->
+<div class="flex flex-col items-center justify-center p-4 rounded-lg bg-slate-50 dark:bg-[#283039] hover:ring-1 hover:ring-primary transition-all group">
+<div class="size-10 mb-3 rounded bg-white p-1 flex items-center justify-center">
+<img alt="TensorFlow Logo" class="w-full h-full object-contain" data-alt="TensorFlow orange logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3slu7DgXGzL2STIi7g5biPA1mmegtrixDSmkx8SKsEq_2EAfmE97Bd2zyVjDeFGiwJyy3CdD9FgvYk8t3GQAoU1Vp4_auefzd2UhVAq0ZqOAFLWrPwoQLfyoq_7dtAQ9yY5xcE9110JCavwQB30My0_xLhGnZu0h1qMtPrB9KnLAN2Vsvw5XnjCyzcM9SVYtEoEmxs2a3PcWR-ivrtHXYN0l6P6tFzez18a1dKFm9pF0HZOo2ebbWPGZBAtsTXw_LVNCE6mQRWi8G"/>
+</div>
+<span class="text-slate-900 dark:text-white font-medium text-sm">TensorFlow</span>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col items-center justify-center p-4 rounded-lg bg-slate-50 dark:bg-[#283039] hover:ring-1 hover:ring-primary transition-all group">
+<div class="size-10 mb-3 rounded bg-white p-1 flex items-center justify-center">
+<img alt="PyTorch Logo" class="w-full h-full object-contain" data-alt="PyTorch flame logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-E-FW5rlYotyEjYh1L33Q1XDtVoWRpSDi3E8BFYqkuNQXX6xpL-8WRdR4vP5hV6LbGaS-dZZDr6hjsQMHvLuxbzGMIj5B2k9K9YMJ88gYRJU-PoCaEVc1zrcx1zUvfbptGsetpUWGKOufL21ld6v0zQBf7Z1piXja4WDzLS8ORSQLRcMMXuIVjGA4QQbkLM1vYCf9xkAFVJPX_N5nefjoVilqMHJJnbhLfXgMCKxs-YCF1NUwMl3wztL7RUL6fp40bpNaxv6lzfsT"/>
+</div>
+<span class="text-slate-900 dark:text-white font-medium text-sm">PyTorch</span>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col items-center justify-center p-4 rounded-lg bg-slate-50 dark:bg-[#283039] hover:ring-1 hover:ring-primary transition-all group">
+<div class="size-10 mb-3 rounded bg-white p-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-800 text-3xl">model_training</span>
+</div>
+<span class="text-slate-900 dark:text-white font-medium text-sm">Scikit-learn</span>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col items-center justify-center p-4 rounded-lg bg-slate-50 dark:bg-[#283039] hover:ring-1 hover:ring-primary transition-all group">
+<div class="size-10 mb-3 rounded bg-white p-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-slate-800 text-3xl">chat</span>
+</div>
+<span class="text-slate-900 dark:text-white font-medium text-sm">HuggingFace</span>
+</div>
+</div>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium border border-primary/20">Regression</span>
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium border border-primary/20">Classification</span>
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium border border-primary/20">Clustering</span>
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium border border-primary/20">NLP</span>
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium border border-primary/20">Computer Vision</span>
+<span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium border border-primary/20">Time Series</span>
+</div>
+</section>
+<!-- Methodology & Soft Skills -->
+<section class="bg-white dark:bg-[#1c232b] rounded-xl p-6 shadow-sm border border-slate-200 dark:border-[#283039]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">psychology</span>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold">Methodologies</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-[#283039] transition-colors">
+<span class="material-symbols-outlined text-primary mt-0.5">science</span>
+<div>
+<h4 class="text-slate-900 dark:text-white font-bold text-sm">A/B Testing &amp; Experimentation</h4>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Design, execution, and statistical analysis of experiments.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-[#283039] transition-colors">
+<span class="material-symbols-outlined text-primary mt-0.5">group_work</span>
+<div>
+<h4 class="text-slate-900 dark:text-white font-bold text-sm">Agile Data Science</h4>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Iterative model development and stakeholder collaboration.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-[#283039] transition-colors">
+<span class="material-symbols-outlined text-primary mt-0.5">lightbulb</span>
+<div>
+<h4 class="text-slate-900 dark:text-white font-bold text-sm">Problem Solving</h4>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Translating business problems into data solutions.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-[#283039] transition-colors">
+<span class="material-symbols-outlined text-primary mt-0.5">present_to_all</span>
+<div>
+<h4 class="text-slate-900 dark:text-white font-bold text-sm">Data Storytelling</h4>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Communicating insights to non-technical audiences.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: Tools, Cloud & Visualization -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Cloud & DevOps -->
+<section class="bg-white dark:bg-[#1c232b] rounded-xl p-6 shadow-sm border border-slate-200 dark:border-[#283039]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">cloud</span>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold">Cloud &amp; DevOps</h2>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-[#283039]">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded bg-white flex items-center justify-center p-1">
+<span class="material-symbols-outlined text-slate-800">cloud_circle</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white font-bold text-sm">AWS</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs">EC2, S3, SageMaker, Lambda</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary">check_circle</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-[#283039]">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded bg-white flex items-center justify-center p-1">
+<span class="material-symbols-outlined text-slate-800">deployed_code</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white font-bold text-sm">Docker</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Containerization &amp; Environments</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary">check_circle</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-slate-50 dark:bg-[#283039]">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded bg-white flex items-center justify-center p-1">
+<span class="material-symbols-outlined text-slate-800">terminal</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white font-bold text-sm">Git &amp; CI/CD</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs">Version control &amp; Automation</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary">check_circle</span>
+</div>
+</div>
+</section>
+<!-- Data Visualization -->
+<section class="bg-white dark:bg-[#1c232b] rounded-xl p-6 shadow-sm border border-slate-200 dark:border-[#283039]">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-2xl">bar_chart</span>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold">Data Visualization</h2>
+</div>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-sm font-medium text-slate-900 dark:text-white">Tableau</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Advanced</span>
+</div>
+<div class="w-full bg-slate-200 dark:bg-[#3b4754] rounded-full h-1.5">
+<div class="bg-primary h-1.5 rounded-full" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-sm font-medium text-slate-900 dark:text-white">PowerBI</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Intermediate</span>
+</div>
+<div class="w-full bg-slate-200 dark:bg-[#3b4754] rounded-full h-1.5">
+<div class="bg-primary h-1.5 rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-sm font-medium text-slate-900 dark:text-white">Matplotlib / Seaborn</span>
+<span class="text-xs font-medium text-slate-500 dark:text-slate-400">Expert</span>
+</div>
+<div class="w-full bg-slate-200 dark:bg-[#3b4754] rounded-full h-1.5">
+<div class="bg-primary h-1.5 rounded-full" style="width: 95%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Certifications -->
+<section class="bg-gradient-to-br from-primary/20 to-transparent rounded-xl p-6 border border-primary/20">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">verified</span>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold">Certifications</h2>
+</div>
+<div class="flex flex-col gap-3">
+<div class="bg-white/50 dark:bg-[#111418]/50 p-3 rounded-lg border border-slate-200 dark:border-white/10 flex items-center gap-3">
+<div class="size-10 bg-white rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-orange-500">workspace_premium</span>
+</div>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-white">AWS Certified</p>
+<p class="text-xs text-slate-600 dark:text-slate-400">Machine Learning Specialty</p>
+</div>
+</div>
+<div class="bg-white/50 dark:bg-[#111418]/50 p-3 rounded-lg border border-slate-200 dark:border-white/10 flex items-center gap-3">
+<div class="size-10 bg-white rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-blue-500">school</span>
+</div>
+<div>
+<p class="text-sm font-bold text-slate-900 dark:text-white">Google Data Analytics</p>
+<p class="text-xs text-slate-600 dark:text-slate-400">Professional Certificate</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="flex flex-col items-center justify-center py-10 text-center px-4">
+<h3 class="text-slate-900 dark:text-white text-2xl font-bold mb-4">Interested in my work?</h3>
+<p class="text-slate-600 dark:text-slate-400 max-w-lg mb-8">
+                        Check out my portfolio projects to see how I apply these tools to solve real-world problems.
+                    </p>
+<div class="flex gap-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-600 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                            View Projects
+                        </button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-slate-200 dark:bg-[#3b4754] hover:bg-slate-300 dark:hover:bg-[#4b5a69] transition-colors text-slate-900 dark:text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                            Contact Me
+                        </button>
+</div>
+</div>
+</div>
+</main>
+<footer class="border-t border-slate-200 dark:border-[#283039] py-8 mt-10 bg-white dark:bg-[#111418]">
+<div class="flex justify-center items-center gap-6">
+<p class="text-slate-500 dark:text-slate-400 text-sm">© 2023 Data Portfolio. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>

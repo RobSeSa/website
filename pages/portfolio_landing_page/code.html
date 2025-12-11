@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Data Scientist Portfolio</title>
+<!-- Google Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white overflow-x-hidden transition-colors duration-200">
+<div class="flex flex-col min-h-screen">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-[#e5e7eb] dark:border-[#283039] bg-white/80 dark:bg-[#111418]/90 backdrop-blur-md">
+<div class="px-4 md:px-10 py-3 flex items-center justify-between mx-auto max-w-[1280px]">
+<div class="flex items-center gap-4 text-[#111418] dark:text-white">
+<div class="text-primary">
+<span class="material-symbols-outlined text-[32px]">dataset</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Alex Data</h2>
+</div>
+<div class="flex items-center gap-4 md:gap-8">
+<nav class="hidden md:flex items-center gap-6 lg:gap-9">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#resume">Resume</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold tracking-[0.015em] shadow-lg shadow-primary/25">
+<span class="truncate">Contact Me</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col justify-center">
+<div class="px-4 md:px-10 lg:px-40 py-12 md:py-20 flex justify-center">
+<div class="flex flex-col max-w-[1280px] w-full">
+<!-- Hero Section -->
+<div class="@container">
+<div class="flex flex-col-reverse lg:flex-row gap-10 lg:gap-20 items-center">
+<!-- Hero Text -->
+<div class="flex flex-col gap-6 flex-1 text-left">
+<div class="flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 w-fit">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-primary text-xs font-bold uppercase tracking-wide">Available for hire</span>
+</div>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight text-[#111418] dark:text-white">
+                                        Turning <span class="text-primary">Data</span> into <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-300">Decisions</span>.
+                                    </h1>
+<h2 class="text-[#637588] dark:text-[#9dabb9] text-base md:text-lg font-normal leading-relaxed max-w-xl">
+                                        Hi, I'm Alex. I specialize in Machine Learning, NLP, and Big Data visualization. I build predictive models that drive business growth and uncover stories hidden within complex datasets.
+                                    </h2>
+</div>
+<div class="flex flex-wrap gap-4 mt-2">
+<button class="flex h-12 min-w-[140px] cursor-pointer items-center justify-center gap-2 rounded-lg bg-primary hover:bg-primary/90 transition-colors px-6 text-white text-base font-bold shadow-lg shadow-primary/30">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+<span class="truncate">View Case Studies</span>
+</button>
+<button class="flex h-12 min-w-[140px] cursor-pointer items-center justify-center gap-2 rounded-lg border border-[#e5e7eb] dark:border-[#283039] bg-white dark:bg-[#283039] hover:bg-gray-50 dark:hover:bg-[#323b46] transition-colors px-6 text-[#111418] dark:text-white text-base font-bold">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span class="truncate">Download Resume</span>
+</button>
+</div>
+<!-- Tech Stack Chips (Integrated into Hero) -->
+<div class="flex flex-col gap-3 mt-8">
+<p class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-[#9dabb9]">Tech Stack</p>
+<div class="flex gap-2 md:gap-3 flex-wrap">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-md bg-[#e5e7eb] dark:bg-[#283039] px-3 transition hover:bg-primary/20 hover:text-primary cursor-default group">
+<span class="material-symbols-outlined text-[18px] text-[#111418] dark:text-white group-hover:text-primary">terminal</span>
+<p class="text-[#111418] dark:text-white text-xs font-medium group-hover:text-primary">Python</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-md bg-[#e5e7eb] dark:bg-[#283039] px-3 transition hover:bg-primary/20 hover:text-primary cursor-default group">
+<span class="material-symbols-outlined text-[18px] text-[#111418] dark:text-white group-hover:text-primary">memory</span>
+<p class="text-[#111418] dark:text-white text-xs font-medium group-hover:text-primary">TensorFlow</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-md bg-[#e5e7eb] dark:bg-[#283039] px-3 transition hover:bg-primary/20 hover:text-primary cursor-default group">
+<span class="material-symbols-outlined text-[18px] text-[#111418] dark:text-white group-hover:text-primary">neurology</span>
+<p class="text-[#111418] dark:text-white text-xs font-medium group-hover:text-primary">PyTorch</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-md bg-[#e5e7eb] dark:bg-[#283039] px-3 transition hover:bg-primary/20 hover:text-primary cursor-default group">
+<span class="material-symbols-outlined text-[18px] text-[#111418] dark:text-white group-hover:text-primary">table_chart</span>
+<p class="text-[#111418] dark:text-white text-xs font-medium group-hover:text-primary">Pandas</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-md bg-[#e5e7eb] dark:bg-[#283039] px-3 transition hover:bg-primary/20 hover:text-primary cursor-default group">
+<span class="material-symbols-outlined text-[18px] text-[#111418] dark:text-white group-hover:text-primary">database</span>
+<p class="text-[#111418] dark:text-white text-xs font-medium group-hover:text-primary">SQL</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-md bg-[#e5e7eb] dark:bg-[#283039] px-3 transition hover:bg-primary/20 hover:text-primary cursor-default group">
+<span class="material-symbols-outlined text-[18px] text-[#111418] dark:text-white group-hover:text-primary">bar_chart</span>
+<p class="text-[#111418] dark:text-white text-xs font-medium group-hover:text-primary">Tableau</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="flex-1 w-full flex justify-center lg:justify-end relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-blue-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative w-full max-w-[480px] aspect-square lg:aspect-[4/5] bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden shadow-2xl" data-alt="Professional headshot of a data scientist in a modern office environment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAhTvgl1RV3deG7nysWBLoHmiO2wgmVkREpnP69iLum_MY7XHkD2KrrLvHzMuCU_4i__CmD8pN-v1vugJFxHc3UUVsOK3dbWnQje91-opG2W1cPq5T18OBocOwUAa0sKPLommy1T-hAOEM3vQN-73dawOXjo9juFMMB9l0_8Qv2Z5FOUL-6JamcP55EJNuwJrTH5w8cSO2KXlI_fghq6XZ_ZH4AIkiPFwrWlWXT_0MTBlpCK1Cn_uQUs0NVgEeYP6C28qRO_5YY3Mt6");'>
+<!-- Decorative Overlay -->
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<div class="flex items-center gap-3">
+<div class="bg-white/10 backdrop-blur-md p-3 rounded-lg border border-white/20">
+<div class="flex items-baseline gap-1">
+<span class="text-2xl font-bold text-white">5+</span>
+<span class="text-xs text-white/80">Years Exp</span>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-3 rounded-lg border border-white/20">
+<div class="flex items-baseline gap-1">
+<span class="text-2xl font-bold text-white">12</span>
+<span class="text-xs text-white/80">Projects</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Additional Section: Brief Projects Preview (Optional but good for portfolio context) -->
+<div class="w-full bg-[#e5e7eb] dark:bg-[#1a222c] py-16 px-4 md:px-10 lg:px-40">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h3 class="text-2xl font-bold text-[#111418] dark:text-white">Featured Work</h3>
+<p class="text-[#637588] dark:text-[#9dabb9] mt-2">Selected data science case studies</p>
+</div>
+<a class="text-primary font-medium hover:underline text-sm hidden sm:block" href="#">View all projects -&gt;</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-white dark:bg-[#283039] rounded-lg overflow-hidden border border-[#e5e7eb] dark:border-[#323b46] hover:shadow-lg transition-shadow group">
+<div class="h-48 bg-cover bg-center" data-alt="Abstract visualization of customer churn data points" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDVgw6Okx4TOFFtDw8nYJCNJHfwIxsBH6zXsDR2x-8d_UsQaejyl33YEBuBY6rG1sBU34E5w-BoLFD9nKY_9MS7dGEHKZfogikEeN-fNffPOoiWaeHt6XufBUKLAF6DkM_lNyVoWLKvVuCyiRTvK4vdMnycKroS96DYaGwKhFLUp4nj1tfj5-EACtDKsxnJD4sZ8kx2ttRF_HNzTc2b3xtSE78MniLzpJNk0-4BNZ73tQugG-KaBM6zoZ3hWwGkEeC12pFXkkmnOBog')"></div>
+<div class="p-5">
+<div class="flex gap-2 mb-3">
+<span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-[10px] font-bold uppercase rounded">Classification</span>
+<span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-[10px] font-bold uppercase rounded">Python</span>
+</div>
+<h4 class="text-lg font-bold text-[#111418] dark:text-white mb-2 group-hover:text-primary transition-colors">Customer Churn Prediction</h4>
+<p class="text-sm text-[#637588] dark:text-[#9dabb9] line-clamp-3">Developed a predictive model using Random Forest to identify at-risk customers, achieving 85% accuracy and reducing churn by 12%.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white dark:bg-[#283039] rounded-lg overflow-hidden border border-[#e5e7eb] dark:border-[#323b46] hover:shadow-lg transition-shadow group">
+<div class="h-48 bg-cover bg-center" data-alt="Stock market candlestick chart analysis" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFw9GoVkbDv3l9K5a7dMkr333ylsp2TAdm9bhQaKOxNuVvfdyU8rvjln697_IPUgfUTIsk7-Mv6f8FYfDbDRCyELpw_a0Qoah_6RtCqAyeWTmzNERT0TV6pWe3OwH424bACAOtWlw98c7NG4WR_6V6oA5i3OkXP_541xFDDXMCEkqMfLwL69RXInnWxMwWT0cLN1LWmxRaMxZKsPM8tMlWnVvZiqwC5X85LVJdMCE1xEhKLDUJr3lcerS88A9rtn8XUw7uYD70Is3R')"></div>
+<div class="p-5">
+<div class="flex gap-2 mb-3">
+<span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-[10px] font-bold uppercase rounded">Time Series</span>
+<span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-[10px] font-bold uppercase rounded">R Studio</span>
+</div>
+<h4 class="text-lg font-bold text-[#111418] dark:text-white mb-2 group-hover:text-primary transition-colors">Market Trend Analysis</h4>
+<p class="text-sm text-[#637588] dark:text-[#9dabb9] line-clamp-3">Built an ARIMA model to forecast stock prices for the retail sector. Integrated real-time data feed for live dashboard updates.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white dark:bg-[#283039] rounded-lg overflow-hidden border border-[#e5e7eb] dark:border-[#323b46] hover:shadow-lg transition-shadow group">
+<div class="h-48 bg-cover bg-center" data-alt="Network graph visualization of social media connections" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPtwf5-7XXXNvZDZxL1seBur9eZpE5Nv99ZulTS0hoEqEidzZdPKPWqX7VNV-DvzKiSk2WREeF3O4q9_6GAU47J91ppbfq7QtP1yakphm26LJzum_MY6H0yLe-z6kH316_fSNKAAeAtV6gAhQYP7pP7WxPLipNBrKtMYwY7vbSFnsrvByqt9QwpTewGKBfVCSLgLtsVwcvwsZwgtJ8eDg2e_uXG8SE_a1pSRu2-cLbc4p8gJPZWFlx04HJ5bYviguUa1eWksa1D9XJ')"></div>
+<div class="p-5">
+<div class="flex gap-2 mb-3">
+<span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-[10px] font-bold uppercase rounded">NLP</span>
+<span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-[10px] font-bold uppercase rounded">TensorFlow</span>
+</div>
+<h4 class="text-lg font-bold text-[#111418] dark:text-white mb-2 group-hover:text-primary transition-colors">Sentiment Analysis Engine</h4>
+<p class="text-sm text-[#637588] dark:text-[#9dabb9] line-clamp-3">Processed 1M+ tweets to analyze brand sentiment during product launches using BERT and LSTM neural networks.</p>
+</div>
+</div>
+</div>
+<div class="mt-8 text-center sm:hidden">
+<a class="text-primary font-medium hover:underline text-sm" href="#">View all projects -&gt;</a>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="border-t border-[#e5e7eb] dark:border-[#283039] bg-white dark:bg-[#111418]">
+<div class="px-4 md:px-10 lg:px-40 py-12 flex flex-col gap-6 text-center">
+<div class="flex flex-wrap justify-center gap-6">
+<a class="group" href="#">
+<div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#f6f7f8] dark:bg-[#283039] group-hover:bg-primary/10 transition-colors">
+<!-- Using a generic code/terminal icon for Github substitute -->
+<span class="material-symbols-outlined text-[#637588] dark:text-[#9dabb9] group-hover:text-primary text-[24px]">code</span>
+</div>
+</a>
+<a class="group" href="#">
+<div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#f6f7f8] dark:bg-[#283039] group-hover:bg-primary/10 transition-colors">
+<!-- Using a generic person/profile icon for Linkedin substitute -->
+<span class="material-symbols-outlined text-[#637588] dark:text-[#9dabb9] group-hover:text-primary text-[24px]">person</span>
+</div>
+</a>
+<a class="group" href="#">
+<div class="flex items-center justify-center w-12 h-12 rounded-full bg-[#f6f7f8] dark:bg-[#283039] group-hover:bg-primary/10 transition-colors">
+<!-- Using a generic layers icon for StackOverflow substitute -->
+<span class="material-symbols-outlined text-[#637588] dark:text-[#9dabb9] group-hover:text-primary text-[24px]">layers</span>
+</div>
+</a>
+</div>
+<div class="flex flex-col gap-2">
+<p class="text-[#637588] dark:text-[#9dabb9] text-base font-normal">© 2024 Alex Data. All rights reserved.</p>
+<p class="text-[#637588] dark:text-[#9dabb9] text-sm font-light">Built with predictive precision.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

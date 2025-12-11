@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Me - Data Scientist Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white min-h-screen flex flex-col overflow-x-hidden">
+<!-- Navigation -->
+<div class="border-b border-solid border-[#e5e7eb] dark:border-[#283039]">
+<div class="px-4 md:px-10 lg:px-40 flex justify-center py-3">
+<div class="flex max-w-[960px] flex-1 items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-4 text-[#111418] dark:text-white">
+<div class="size-8 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">data_exploration</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Data Scientist</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal text-[#637588] dark:text-[#9dabb9] hover:text-[#111418] dark:hover:text-white transition-colors" href="#">Home</a>
+<a class="text-sm font-medium leading-normal text-[#637588] dark:text-[#9dabb9] hover:text-[#111418] dark:hover:text-white transition-colors" href="#">Projects</a>
+<a class="text-sm font-medium leading-normal text-[#637588] dark:text-[#9dabb9] hover:text-[#111418] dark:hover:text-white transition-colors" href="#">About</a>
+<a class="text-sm font-medium leading-normal text-[#111418] dark:text-white font-bold" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Download Resume</span>
+</button>
+</div>
+<!-- Mobile Menu Icon -->
+<div class="md:hidden flex items-center text-[#111418] dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-grow px-4 md:px-10 lg:px-40 py-10 flex justify-center">
+<div class="flex flex-col max-w-[960px] flex-1 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Contact Info & Heading -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Heading -->
+<div class="flex flex-col gap-3">
+<p class="text-[#111418] dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">Let's Connect</p>
+<p class="text-[#637588] dark:text-[#9dabb9] text-lg font-normal leading-relaxed">
+                            Have a question about my research, interested in my models, or want to collaborate on a data project? 
+                        </p>
+</div>
+<!-- Contact Cards -->
+<div class="flex flex-col gap-4 mt-4">
+<h3 class="text-[#111418] dark:text-white text-xl font-bold mb-2">Direct Channels</h3>
+<!-- Email Card -->
+<div class="flex gap-4 rounded-xl border border-[#e5e7eb] dark:border-[#3b4754] bg-white dark:bg-[#1c2127] p-5 items-start hover:border-primary/50 transition-colors group cursor-pointer">
+<div class="text-[#111418] dark:text-white group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">mail</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-[#111418] dark:text-white text-base font-bold leading-tight">Email</h2>
+<p class="text-[#637588] dark:text-[#9dabb9] text-sm font-normal leading-normal">contact@datascientist.com</p>
+</div>
+</div>
+<!-- LinkedIn Card -->
+<div class="flex gap-4 rounded-xl border border-[#e5e7eb] dark:border-[#3b4754] bg-white dark:bg-[#1c2127] p-5 items-start hover:border-primary/50 transition-colors group cursor-pointer">
+<div class="text-[#111418] dark:text-white group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">link</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-[#111418] dark:text-white text-base font-bold leading-tight">LinkedIn</h2>
+<p class="text-[#637588] dark:text-[#9dabb9] text-sm font-normal leading-normal">linkedin.com/in/jdoe-data</p>
+</div>
+</div>
+<!-- Resume Card -->
+<div class="flex gap-4 rounded-xl border border-[#e5e7eb] dark:border-[#3b4754] bg-white dark:bg-[#1c2127] p-5 items-start hover:border-primary/50 transition-colors group cursor-pointer">
+<div class="text-[#111418] dark:text-white group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[28px]">description</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-[#111418] dark:text-white text-base font-bold leading-tight">Resume / CV</h2>
+<p class="text-[#637588] dark:text-[#9dabb9] text-sm font-normal leading-normal">Download PDF (Last updated Oct 2023)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Form -->
+<div class="lg:col-span-7">
+<div class="rounded-2xl bg-white dark:bg-[#151a21] p-6 md:p-8 border border-[#e5e7eb] dark:border-[#283039] shadow-sm">
+<h3 class="text-[#111418] dark:text-white text-2xl font-bold mb-6">Send a Message</h3>
+<form class="flex flex-col gap-5">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<label class="flex flex-col flex-1">
+<p class="text-[#111418] dark:text-white text-base font-medium leading-normal pb-2">Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#d1d5db] dark:border-[#3b4754] bg-white dark:bg-[#1c2127] focus:border-primary h-14 placeholder:text-[#9ca3af] dark:placeholder:text-[#9dabb9] p-[15px] text-base font-normal leading-normal transition-all" placeholder="Jane Doe" type="text"/>
+</label>
+<label class="flex flex-col flex-1">
+<p class="text-[#111418] dark:text-white text-base font-medium leading-normal pb-2">Email</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#d1d5db] dark:border-[#3b4754] bg-white dark:bg-[#1c2127] focus:border-primary h-14 placeholder:text-[#9ca3af] dark:placeholder:text-[#9dabb9] p-[15px] text-base font-normal leading-normal transition-all" placeholder="jane@example.com" type="email"/>
+</label>
+</div>
+<label class="flex flex-col w-full">
+<p class="text-[#111418] dark:text-white text-base font-medium leading-normal pb-2">Subject</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#d1d5db] dark:border-[#3b4754] bg-white dark:bg-[#1c2127] focus:border-primary h-14 placeholder:text-[#9ca3af] dark:placeholder:text-[#9dabb9] p-[15px] text-base font-normal leading-normal transition-all" placeholder="Data Analysis Project Inquiry" type="text"/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-[#111418] dark:text-white text-base font-medium leading-normal pb-2">Message</p>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-none rounded-lg text-[#111418] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#d1d5db] dark:border-[#3b4754] bg-white dark:bg-[#1c2127] focus:border-primary min-h-[160px] placeholder:text-[#9ca3af] dark:placeholder:text-[#9dabb9] p-[15px] text-base font-normal leading-normal transition-all" placeholder="Hi, I'm interested in discussing a potential collaboration on..."></textarea>
+</label>
+<div class="flex items-center gap-3 pt-2">
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary hover:bg-primary/90 text-white text-base font-bold leading-normal tracking-[0.015em] transition-all shadow-lg shadow-primary/20" type="submit">
+                                    Send Message
+                                </button>
+<p class="text-xs text-[#637588] dark:text-[#9dabb9] ml-2">Typically replies within 24 hours.</p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Map Image Section (Visual Interest) -->
+<div class="w-full h-64 md:h-80 relative mt-10 border-t border-[#e5e7eb] dark:border-[#283039]">
+<div class="absolute inset-0 bg-gradient-to-t from-background-light dark:from-background-dark to-transparent z-10"></div>
+<img alt="Dark abstract minimalist background representing data connections and global networks" class="w-full h-full object-cover opacity-60 grayscale" data-alt="Dark abstract minimalist background representing data connections and global networks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQJ-3pIGMTyxgBQ5_TTflWmb_3wB_v4JMTqqbJvM6tW1o8jTrc6L4ClrBGsyFYqxY6JBWvB4XgjH3fFVE3O0jAGwq06iK4PzacDZbYJyypQxmCUcneaHecUW05xUumQ5egrcOLxR0k9a1Jz3nY9l8zj_7MrxrRuVC_GinqiQNrcn8MqeFjRt9c1QRG_QU7T8PsnngHSkRQ6bUTuTaBa6WLLSOjhMc51SAcqqP_i-qDZ4FjEHrLfqoUx7IoEDGXTnJRrEBDedy4q27j"/>
+<div class="absolute bottom-0 w-full flex justify-center pb-8 z-20">
+<p class="text-sm font-medium text-[#637588] dark:text-[#9dabb9]">Based in San Francisco, CA • Available for Remote Work</p>
+</div>
+</div>
+</body></html>
